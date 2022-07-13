@@ -1,12 +1,11 @@
 import React from "react";
 
-
 function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/#">
-          Navbar
+        <a className="navbar-brand" href="/Login">
+          Login
         </a>
         <button
           className="navbar-toggler"
@@ -29,18 +28,18 @@ function Navbar(props) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Login">
-               Login
+              <a className="nav-link" href="/#">
+               Shop
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-                Register
+               About
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-                About
+                Contact
               </a>
             </li>
             <li className="nav-item dropdown">
