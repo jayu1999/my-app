@@ -21,7 +21,7 @@ export default class Login extends Component {
                   placeholder="Enter Email"
                 />
               </div>
-              <div className="form-group" style={{ marginBottom: "0.9em" }}>
+              <div className="form-group"  style={{ marginTop: "0.7em" }}>
                 <label htmlFor="password">Password</label>
                 <input
                   type="password"
@@ -31,10 +31,13 @@ export default class Login extends Component {
                   placeholder="Enter Password"
                 />
               </div>
-              <button type="submit" className="btn btn-primary btn-block">
+              <button type="submit" className="btn btn-primary btn-block"  style={{ marginTop: "0.7em" }}>
                 Login{" "}
               </button>
             </form>
+            <p className="forgot-password text-right"  style={{ marginTop: "0.9em" }}>
+              register here <a href="/Register">sign up?</a>
+            </p>
           </div>
         </div>
       </div>
