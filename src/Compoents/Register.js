@@ -3,27 +3,29 @@ import React, { Component } from "react";
 export default class Register extends Component {
   render() {
     return (
-      <div class="row mt-5">
-        <div class="col-md-6 m-auto">
-          <div class="card card-body">
-            <h1 class="text-center mb-3">
-              <i class="fas fa-user-plus"></i> Register </h1>
-               
-        <form action="/users/register" method="POST">
-        <div class="form-group">
-          <label for="name">Name</label>
+        <form>
+        <h3>Sign Up</h3>
+        <div className="w-50 p-3 mx-auto ">
+          <label style={{marginBottom:"0.5em"}}>First name</label>
           <input
-            type="name"
-            id="name"
-            name="name"
-            class="form-control"
-            placeholder="Enter Name"
-            />
+            type="text"
+            className="form-control"
+            placeholder="First name"
+          />
           </div>
-        </form>
+        <div className="w-50 p-3 mx-auto">
+          <label>Last name</label>
+          <input type="text" className="form-control" placeholder="Last name" />
         </div>
+        <div className="w-50 p-3 mx-auto">
+          <label>Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+          />
         </div>
-      </div>
+          </form>
     );
   }
 }
