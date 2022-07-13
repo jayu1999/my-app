@@ -31,6 +31,9 @@ export default class Login extends Component {
                   placeholder="Enter Password"
                 />
               </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Login{" "}
+              </button>
             </form>
           </div>
         </div>
