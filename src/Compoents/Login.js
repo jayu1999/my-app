@@ -21,6 +21,16 @@ export default class Login extends Component {
                   placeholder="Enter Email"
                 />
               </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Enter Password"
+                />
+              </div>
             </form>
           </div>
         </div>
