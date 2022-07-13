@@ -5,7 +5,7 @@ import Navbar from "../src/Compoents/Navbar";
 import Home from "../src/Compoents/Home";
 import Login from "../src/Compoents/Login";
 import Register from "./Compoents/Register";
-import { Route, Link, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (

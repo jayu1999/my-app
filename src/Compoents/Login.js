@@ -21,7 +21,7 @@ export default class Login extends Component {
                   placeholder="Enter Email"
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group" style={{ marginBottom: "0.9em" }}>
                 <label htmlFor="password">Password</label>
                 <input
                   type="password"

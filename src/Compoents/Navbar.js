@@ -1,11 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 
 function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/#">
           Navbar
         </a>
         <button
@@ -23,23 +23,23 @@ function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarColor01">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <a className="nav-link active" href="/#">
                 Home
                 <span className="visually-hidden">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
+              <a className="nav-link" href="/Login">
+               Login
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
+              <a className="nav-link" href="/#">
+                Register
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/#">
                 About
               </a>
             </li>
@@ -47,7 +47,7 @@ function Navbar(props) {
               <a
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
-                href="#"
+                href="/#"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -55,17 +55,17 @@ function Navbar(props) {
                 Dropdown
               </a>
               <div className="dropdown-menu">
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/#">
                   Action
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/#">
                   Another action
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/#">
                   Something else here
                 </a>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/#">
                   Separated link
                 </a>
               </div>

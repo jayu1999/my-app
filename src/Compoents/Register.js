@@ -42,10 +42,12 @@ export default class Register extends Component {
             </button>
           </div>
           <p className="forgot-password text-right ">
-            Already registered <a href="/sign-in">sign in?</a>
+            Already registered <a href="/Login">sign in?</a>
           </p>
         </div>
       </form>
     );
   }
 }
+
+
