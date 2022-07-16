@@ -1,41 +1,40 @@
 import React, { Component } from "react";
 
 export default class Login extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state ={
-      email:"",
-      password:"",
+    this.state = {
+      email: "",
+      password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleSubmit(e){
+  handleSubmit(e) {
     e.preventDefault();
-    const { email,password }=this.state;
-    console.log(email,password);
-    fetch("http://localhost:5000/login-user",{
-    method:"POST",
-    crossDomain:True;
-    headers:{
-      "Content-Type":"application/json",
-      Accept:"application/json",
-      "Access-Control-Allow-Origin":"*",
-    },
-    body:JSON.stringify({
-      email,
-      password,
-    }),
-   })
-    .then((res)=> res.json())
-    .then((data) =>{
-      console.log(data ,"userRegister");
-      if(data.status == 'ok'){
-        alert("login successful")
-        window.localStoarge.setItem("token",data.data);
-        window.location.href ="./userDetails";
-      }
-    });
-
+    const { email, password } = this.state;
+    console.log(email, password);
+    fetch("http://localhost:5000/login-user", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+        if ((data.status = "ok")) {
+          alert("login successful");
+          window.localStorage.setItem("token", data.data);
+          window.location.href = "./userDetails";
+        }
+      });
   }
   render() {
     return (
@@ -46,17 +45,16 @@ export default class Login extends Component {
               <i className="fas fa-sign-in-alt"></i> Login
             </h1>
 
-            <form action="/users/login" method="POST">
+            <form onSubmit={this.handleSubmit}>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email</label>ss
                 <input
                   type="email"
                   id="email"
                   name="email"
                   className="form-control"
                   placeholder="Enter Email"
-                  onChange={(e) => this.setState({password:e.target.value})}
-
+                  onChange={(e) => this.setState({ password: e.target.value })}
                 />
               </div>
               <div className="form-group" style={{ marginTop: "0.7em" }}>
@@ -67,8 +65,7 @@ export default class Login extends Component {
                   name="password"
                   className="form-control"
                   placeholder="Enter Password"
-                  onChange={(e) => this.setState({password:e.target.value})}
-
+                  onChange={(e) => this.setState({ password: e.target.value })}
                 />
               </div>
               <button
@@ -81,7 +78,8 @@ export default class Login extends Component {
             </form>
             <p
               className="forgot-password text-right"
-              style={{ marginTop: "0.9em" }}>
+              style={{ marginTop: "0.9em" }}
+            >
               register here <a href="/Register">sign up?</a>
             </p>
           </div>
