@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+
 
 function Navbar(props) {
+const [ isLogin,setisLogin]=useState(true);
+const [count, setCount] = useState(0);
+console.log('ifLogin', isLogin) 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/Login">
-          Login
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,12 +30,12 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-               Shop
+                Shop
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-               About
+                About
               </a>
             </li>
             <li className="nav-item">
@@ -70,16 +71,16 @@ function Navbar(props) {
               </div>
             </li>
           </ul>
-          <form className="d-flex">
-            <input
-              className="form-control me-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button className="btn btn-secondary my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
+          <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div className="container-fluid">
+              <a className="navbar-brand" href="/Login">
+                Login
+              </a>
+              <a className="navbar-brand" href="/Logout">
+                Logout
+              </a>
+            </div>
+          </nav>
         </div>
       </div>
     </nav>

@@ -9,7 +9,7 @@ export default class Login extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleSubmit(e) {
+    handleSubmit(e) {
     e.preventDefault();
     const { email, password } = this.state;
     console.log(email, password);
@@ -44,7 +44,7 @@ export default class Login extends Component {
             <h1 className="text-center mb-3">
               <i className="fas fa-sign-in-alt"></i> Login
             </h1>
-
+          
             <form onSubmit={this.handleSubmit}>
               <div className="form-group">
                 <label htmlFor="email">Email</label>ss

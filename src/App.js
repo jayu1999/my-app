@@ -7,6 +7,7 @@ import Login from "../src/Compoents/Login";
 import Register from "./Compoents/Register";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+
 function App() {
   return (
     <div className="container">
